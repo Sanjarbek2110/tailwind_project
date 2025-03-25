@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Proekt</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-[#000000] text-white overflow-x-hidden-hidden">
+
+    <div class="bg-[url('./images/hero_bg.png')] bg-cover bg-no-repeat pb-[500px] max-[750px]:bg-[85%] max-[750px]:bg-[100%] max-[460px]:bg-[75%]">
+        
+        <header class="pt-6 mb-[130px] [background:linear-gradient(180deg,rgb(0,0,0),rgba(0,0,0,0)100%)]">
+            <div class="container max-w-[1440px] mx-auto px-5 flex justify-between items-center">
+                <div class="flex gap-16 items-center">
+                    
+                    <div class="flex items-center gap-2">
+                        <a href="#">
+                            <img src="./images/header_logo.png" alt="Logo" class="">
+                        </a>
+                        <p class="w-[107px] text-[10px] leading-tight text-white">Поколени. Технологии. Окружение. Хешрейт.</p>
+                    </div>
+                    
+                    
+                    <nav class="max-[750px]:hidden">
+                        <ul class="flex gap-5">
+                            <li><a class="transition-all duration-300 ease-in-out hover:text-teal-400" href="#">Преимущества</a></li>
+                            <li><a class="transition-all duration-300 ease-in-out hover:text-teal-400" href="#">Статистика пула</a></li>
+                            <li><a class="transition-all duration-300 ease-in-out hover:text-teal-400" href="#">Команда</a></li>
+                            <li><a class="transition-all duration-300 ease-in-out hover:text-teal-400" href="#">Партнёры</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                
+                <div class="flex gap-3 items-center max-[1050px]:hidden">
+                    <select class="border border-teal-400 rounded-lg select select-accent px-1 w-[50px] bg-[black] max-w-[1033px]:hidden ">
+                        <option>Ru</option>
+                        <option>Uzb</option>
+                        <option>Eng</option>
+                    </select>
+                    <button class="border border-teal-400 px-[28px] py-[10px] rounded-lg transition-all duration-300 ease-in-out hover:bg-teal-400 hover:text-gray-900 max-w-[1033px]:hidden ">Регистрация</button>
+                    <button class="bg-teal-400 px-[28px] py-[10px] rounded-lg text-gray-900 transition-all duration-300 ease-in-out hover:bg-teal-500 max-w-[1033px]:hidden ">Войти</button>
+                </div>
+
+                <img id="menu-btn" src="./images/hamburger.png" class="w-[30px] h-[30px] hidden cursor-pointer max-[1050px]:block" alt="">
+            </div>
+        </header>
+        
+        <!-- Hero section -->
+        <section class="container max-w-[1440px] mx-auto px-5">
+            <h1 class="text-[60px] font-bold leading-[120%] tracking-[-2%] w-[620px] max-[1050px]:text-[55px] max-[750px]:text-[48px] max-[600px]:text-[40px] max-[600px]:w-auto max-[460px]:text-[35px] max-[410px]:text-[30px]">СТАНЬТЕ ЧАСТЬЮ <span class="text-teal-400">МАЙНИНГ-БИЗНЕСА</span></h1>
+
+            <p class=" mt-5 w-[572px] max-[540px]:w-auto max-[540px]:text-[14px]">Предоставляем услуги по подбору и настройке вычислительного оборудования для создания пассивного дохода с помощью высокотехнологичных ЦОД и собственного пула.</p>
+            
+            <div class="mt-10 flex  gap-4">
+                <button class="transition-all duration-300 ease-in-out bg-teal-400 text-gray-900 p-5 font-semibold rounded-lg hover:bg-teal-500 max-[750px]:px-[15px] max-[750px]:py-[10px] [460px]:text-[14px]">НАЧАТЬ МАЙНИТЬ</button>
+
+                <button class="transition-all duration-300 ease-in-out border border-white p-5 font-semibold rounded-lg hover:bg-white hover:text-gray-900 max-[750px]:bg-teal-400 max-[750px]:border-none max-[750px]:px-[15px] max-[750px]:py-[10px] max-[460px]:text-[14px]">ПОДРОБНЕЕ</button>
+            </div>
+        </section>
+    </div>
+
+    <main class="bg-[#000000] overflow-hidden">
+
+        <!--  -->
+        <section class="creating bg-[#000000] pb-[120px]">
+
+            <div class="container max-w-[1440px] mx-auto px-5">
+                <div class="section__title text-[60px] font-bold leading-[120%] tracking-[-2%] mb-[40px] max-[1050px]:text-[55px] max-[750px]:text-[48px] max-[600px]:text-[40px] max-[600px]:w-auto max-[460px]:text-[35px] max-[410px]:text-[30px]">Создание доходной ячейки</div>
+
+                <div class="items flex gap-y-[20px] justify-between mb-10 max-[880px]:flex-col">
+    
+                    <div class="item py-5 px-9 bg-[#18181A] font-semibold leading-[21px] uppercase rounded-xl transition-all duration-300 ease-in-out hover:text-[#0DE6BE] w-[32.333%] max-[980px]:text-[14px] max-[880px]:w-auto max-[450px]:pl-[20px] max-[450px]:pr-[10px] max-[410px]:text-[12.5px]">Подбор и приобретение оборудования</div>
+                    
+                    <div class="item py-5 px-9 bg-[#18181A] font-semibold leading-[21px] uppercase rounded-xl transition-all duration-300 ease-in-out hover:text-[#0DE6BE] w-[32.333%] max-[980px]:text-[14px] max-[880px]:w-auto max-[450px]:pl-[20px] max-[450px]:pr-[10px] max-[410px]:text-[12.5px]">Размещаем ваше оборудование в ЦОД GTeh</div>
+
+                    <div class="item py-5 px-9 bg-[#18181A] font-semibold leading-[21px] uppercase rounded-xl transition-all duration-300 ease-in-out hover:text-[#0DE6BE] w-[32.333%] max-[980px]:text-[14px] max-[880px]:w-auto max-[450px]:pl-[20px] max-[450px]:pr-[10px] max-[410px]:text-[12.5px]">Обслуживание и ремонт оборудования</div>
+                    
+                </div>
+    
+                <div class="flex justify-between items-start max-[1050px]:bg-[url('./images/creating_left.png')] max-[1050px]:bg-contain max-[1050px]:bg-no-repeat max-[1050px]:bg-left">
+                    <img src="./images/creating_left.png" alt="" class="w-[55%] max-[1050px]:hidden">
+    
+                    <div class="right w-[40%] max-[1050px]:w-[100%]">
+                        <h2 class="text-[24px] leading-[120%] mb-10 max-[420px]:text-[20px]">Помогаем с подбором, покупкой и размещением оборудования для майнинга криптовалюты</h2>
+    
+                        <div class="flex flex-col gap-y-[40px] mb-[60px]">
+                            <div class="item flex gap-x-[20px] items-center">
+                                <img src="./images/creating_icons1.png" alt="" class="max-[420px]:w-[24px] max-[420px]:h-[24px]">
+                                <p class="max-[420px]:text-[13px]">Оборудование оформляетсяна физических или юридических лиц</p>
+                            </div>
+    
+                            <div class="item flex gap-x-[20px] items-center">
+                                <img src="./images/creating_icons2.png" alt="" class="max-[420px]:w-[24px] max-[420px]:h-[24px]">
+                                <p class="max-[420px]:text-[13px]">В любой момент вы можете купить,продать и разместить оборудование у нас</p>
+                            </div>
+    
+                            <div class="item flex gap-x-[20px] items-center">
+                                <img src="./images/creating_icons3.png" alt="" class="max-[420px]:w-[24px] max-[420px]:h-[24px]">
+                                <p class="max-[420px]:text-[13px]">Размещая оборудование в майнинг-отеле GTeh, вы получите макимально качественное обслуживание и доход</p>
+                            </div>
+    
+                            <div class="item flex gap-x-[20px] items-center">
+                                <img src="./images/creating_icons4.png" alt="" class="max-[420px]:w-[24px] max-[420px]:h-[24px]">
+                                <p class="max-[420px]:text-[13px]">Постоянно обновляемые цены в каталоге</p>
+                            </div>
+    
+                            <div class="item flex gap-x-[20px] items-center">
+                                <img src="./images/creating_icons5.png" alt="" class="max-[420px]:w-[24px] max-[420px]:h-[24px]">
+                                <p class="max-[420px]:text-[13px]">Ассортимент оборудования пополняется благодаря сотрудничеству с лучшими поставщиками</p>
+                            </div>
+    
+                            <div class="item flex gap-x-[20px] items-center">
+                                <img src="./images/creating_icons6.png" alt="" class="max-[420px]:w-[24px] max-[420px]:h-[24px]">
+                                <p class="max-[420px]:text-[13px]">Оборудование доставляется непосредственно в ЦОД</p>
+                            </div>
+                        </div>
+    
+                        <button class="border-none bg-[url('./images/creating_btn.png')] py-[20px] px-[30px] cursor-pointer bg-cover bg-no-repeat font-semibold leading-[21px] text-[#0C0C15] max-[420px]:p-[15px]">Подобрать оборудование</button>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!--  -->
+        <section class="bg-[#000000]">
+
+            <div class="bg-[url('./images/s2.png')]  bg-cover bg-no-repeat pt-[170px] pb-[343px] max-[750px]:bg-[77%]">
+                <div class="container max-w-[1440px] mx-auto px-5">
+                    <div class="section__title text-[60px] font-bold leading-[120%] tracking-[-2%] mb-[40px] w-[630px] mb-[20px] max-[1050px]:text-[55px] max-[750px]:w-auto max-[750px]:text-[48px] max-[600px]:text-[40px] max-[600px]:w-auto max-[460px]:text-[35px] max-[410px]:text-[30px]">Обеспечиваем <span class="text-[#0DE6BE]">устойчивый доход</span> от майнинга</div>
+                    <p class="leading-[21px] ml-[6px] mb-[60px]">Собственная физическая серверная инфраструктура</p>
+                    <button class="border-none bg-[url('./images/creating_btn.png')] py-[20px] px-[30px] cursor-pointer bg-cover bg-no-repeat font-semibold leading-[21px] text-[#0C0C15] uppercase max-[750px]:p-[15px]">НАчать майнить</button>
+                </div>
+            </div>
+        </section>
+
+        <!--  -->
+        <section class="pb-[120px]">
+            <div class="container max-w-[1440px] mx-auto px-5">
+                <div class="carousel carousel-end rounded-box flex gap-x-[20px]">
+
+                    <div class="carousel-item relative w-[24%] max-[1400px]:w-[33.333%] max-[1000px]:w-[50%] max-[680px]:w-[100%]">
+                        <img src="./images/1.png" alt="Kosmos" />
+                        <p class="text-[20px] font-semibold leading-[120%] w-[295px] max-[1010px]:text-[16px] absolute left-5 bottom-5">Автоматизированный мониторинг и превентивное устранение технических сбоев 24/7</p>
+                    </div>
+
+                    <div class="carousel-item relative w-[24%] max-[1400px]:w-[33.333%] max-[1000px]:w-[50%] max-[680px]:w-[100%]">
+                        <img src="./images/2.png" alt="Kosmos" />
+                        <p class="text-[20px] font-semibold leading-[120%] w-[295px] max-[1010px]:text-[16px] absolute left-5 bottom-5">Минимально возможные задержки и качественная связь до stratum серверов</p>
+                    </div>
+
+                    <div class="carousel-item relative w-[24%] max-[1400px]:w-[33.333%] max-[1000px]:w-[50%] max-[680px]:w-[100%]">
+                        <img src="./images/3.png" alt="Kosmos" />
+                        <p class="text-[20px] font-semibold leading-[120%] w-[295px] max-[1010px]:text-[16px] absolute left-5 bottom-5">Обслуживание собственной профессиональной IT-командой</p>
+                    </div>
+
+                    <div class="carousel-item relative w-[24%] max-[1400px]:w-[33.333%] max-[1000px]:w-[50%] max-[680px]:w-[100%]">
+                        <img src="./images/4.png" alt="Kosmos" />
+                        <p class="text-[20px] font-semibold leading-[120%] w-[295px] max-[1010px]:text-[16px] absolute left-5 bottom-5">Независимость от зарубежных сервисов, низкий риск потери доступа к сервису и из-за блокировок</p>
+                    </div>
+
+                    <div class="carousel-item relative w-[24%] max-[1400px]:w-[33.333%] max-[1000px]:w-[50%] max-[680px]:w-[100%]">
+                        <img src="./images/1.png" alt="Kosmos" />
+                        <p class="text-[20px] font-semibold leading-[120%] w-[295px] max-[1010px]:text-[16px] absolute left-5 bottom-5">Автоматизированный мониторинг и превентивное устранение технических сбоев 24/7</p>
+                    </div>
+  
+                    <div class="carousel-item relative w-[24%] max-[1400px]:w-[33.333%] max-[1000px]:w-[50%] max-[680px]:w-[100%]">
+                        <img src="./images/2.png" alt="Kosmos" />
+                        <p class="text-[20px] font-semibold leading-[120%] w-[295px] max-[1010px]:text-[16px] absolute left-5 bottom-5">Минимально возможные задержки и качественная связь до stratum серверов</p>
+                    </div>
+  
+                    <div class="carousel-item relative w-[24%] max-[1400px]:w-[33.333%] max-[1000px]:w-[50%] max-[680px]:w-[100%]">
+                        <img src="./images/3.png" alt="Kosmos" />
+                        <p class="text-[20px] font-semibold leading-[120%] w-[295px] max-[1010px]:text-[16px] absolute left-5 bottom-5">Обслуживание собственной профессиональной IT-командой</p>
+                    </div>
+  
+                    <div class="carousel-item relative w-[24%] max-[1400px]:w-[33.333%] max-[1000px]:w-[50%] max-[680px]:w-[100%]">
+                        <img src="./images/4.png" alt="Kosmos" />
+                        <p class="text-[20px] font-semibold leading-[120%] w-[295px] max-[1010px]:text-[16px] absolute left-5 bottom-5">Независимость от зарубежных сервисов, низкий риск потери доступа к сервису и из-за блокировок</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--  -->
+        <section class="py-[38px] bg-[url('./images/s3.png')] bg-contain bg-right bg-no-repeat h-[615px] max-[750px]:bg-cover">
+            <div class="container max-w-[1440px] mx-auto px-5">
+                <div class="section__title text-[60px] font-bold leading-[120%] tracking-[-2%] mb-[40px] w-[710px] mb-[35px] max-[1050px]:text-[55px] max-[750px]:text-[48px] max-[600px]:text-[40px] max-[600px]:w-auto max-[460px]:text-[35px] max-[410px]:text-[30px]"><span class="text-[#0DE6BE]">Собственное</span> программное обеспечение</div>
+                
+                <div class="flex flex-col gap-y-[40px] mb-[40px]">
+
+                    <div class="flex gap-x-[10px] w-[413px] items-start max-[440px]:w-auto">
+                        <img src="./images/cor.png" alt="">
+                        <p class="text-[14px] leading-[19px] text-[#CCCCCC] max-[750px]:text-[white]">Система увеличения доходности за счёт использования собственных модулей оптимизации вычислений и балансировки</p>
+                    </div>
+
+
+                    <div class="flex gap-x-[10px] w-[413px] items-start max-[440px]:w-auto">
+                        <img src="./images/cor.png" alt="">
+                        <p class="text-[14px] leading-[19px] text-[#CCCCCC] max-[750px]:text-[white]">Программный комплекс управления майнинговым пулом</p>
+                    </div>
+
+
+                    <div class="flex gap-x-[10px] w-[413px] items-start max-[440px]:w-auto">
+                        <img src="./images/cor.png" alt="">
+                        <p class="text-[14px] leading-[19px] text-[#CCCCCC] max-[750px]:text-[white]">ITSM-система для бесперебойной работы оборудования с горячей заменой</p>
+                    </div>
+
+                </div>
+
+                <button class="border-none bg-[url('./images/creating_btn.png')] py-[20px] px-[30px] cursor-pointer bg-cover bg-no-repeat font-semibold leading-[21px] text-[#0C0C15] uppercase max-[750px]:p-[15px]">НАчать майнить</button>
+            </div>
+        </section>
+
+        <!--  -->
+        <section class="bg-[#000000] pt-[122px] pb-[120px]">
+            <div class="container max-w-[1440px] mx-auto px-5 flex justify-between gap-5 max-[750px]:flex-wrap">
+
+                <div class="item w-1/3 flex flex-col gap-y-5 max-[750px]:w-[48%] max-[540px]:w-[100%]">
+                    <div class="item relative">
+                        <img src="./images/5.png" alt="">
+                        <p class="text-[24px] w-auto mr-5 absolute left-5 bottom-5 font-semibold max-[970px]:text-[16px]">Прозрачная и открытая статистика</p>
+                    </div>
+
+                    <ul class="flex flex-col list-disc ml-5">
+                        <li class="text-[14px] leading-[19px] text-[#CCCCCC]">Данные добычи в режиме реального времени в личном кабинете</li>
+                        <li class="text-[14px] leading-[19px] text-[#CCCCCC]">Статистика блоков и наград пула в открытом виде</li>
+                        <li class="text-[14px] leading-[19px] text-[#CCCCCC]">Обезличенная статистика участников пула</li>
+                    </ul>
+                </div>
+
+                <div class="item w-1/3 flex flex-col gap-y-5 max-[750px]:w-[48%] max-[540px]:w-[100%]">
+                    <div class="item relative">
+                        <img src="./images/6.png" alt="">
+                        <p class="text-[24px] w-auto mr-5 absolute left-5 bottom-5 font-semibold max-[970px]:text-[16px]">Выплата в разных юрисдикциях</p>
+                    </div>
+
+                    <ul class="flex flex-col list-disc ml-5">
+                        <li class="text-[14px] leading-[19px] text-[#CCCCCC]">В зависимости от вашего местонахождения</li>
+                    </ul>
+                </div>
+
+                <div class="item w-1/3 flex flex-col gap-y-5 max-[750px]:w-[48%] max-[540px]:w-[100%]">
+                    <div class="item relative">
+                        <img src="./images/7.png" alt="">
+                        <p class="text-[24px] w-auto mr-5 absolute left-5 bottom-5 font-semibold max-[970px]:text-[16px]">Полное юридическое сопровождение</p>
+                    </div>
+
+                    <ul class="flex flex-col list-disc ml-5">
+                        <li class="text-[14px] leading-[19px] text-[#CCCCCC]">Подтверждающие добычу документы</li>
+                        <li class="text-[14px] leading-[19px] text-[#CCCCCC]">Дополнительная проверка крупных выплат</li>
+                        <li class="text-[14px] leading-[19px] text-[#CCCCCC]">Услуги аккаунтинга юридических лиц</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="pb-[123px] bg-[#000000]">
+            <section class="bg-[url('./images/call_back.png')] bg-cover bg-no-repea max-[750px]:bg-[85%] max-[750px]:bg-[100%] max-[460px]:bg-[85%]">
+                <div class="container max-w-[1440px] mx-auto px-5">
+                    <div class="section__title text-[60px] font-bold leading-[120%] tracking-[-2%] w-[710px] mb-[20px] max-[1050px]:text-[55px] max-[750px]:text-[48px] max-[600px]:text-[40px] max-[600px]:w-auto max-[460px]:text-[35px] max-[410px]:text-[30px]">Начните зарабатывать  майнингом с <span class="text-[#0DE6BE]">GTeh</span></div>
+                    
+                    <p class="leading-5 w-[750px] mb-[40px] max-[780px]:w-auto">Минимальная стоимость активов в точке входа - залог максимальной прибыли. Покупай, когда все продают, продавай, когда все покупают. Мы предоставляем наш сервис вне зависимости от курсов и рыночной ситуации</p> 
+    
+                    <button class="mb-[120px] border-none bg-[url('./images/creating_btn.png')] py-[20px] px-[30px] cursor-pointer bg-cover bg-no-repeat font-semibold leading-[21px] text-[#0C0C15] uppercase" max-[750px]:p-[15px]>Начать майнить</button>
+                </div>
+    
+                <div class="container max-w-[1440px] mx-auto px-5">
+                    <div class="section__title text-[60px] font-bold leading-[120%] tracking-[-2%] w-[570px] mb-[40px] max-[1050px]:text-[55px] max-[750px]:text-[48px] max-[600px]:text-[40px] max-[600px]:w-auto max-[460px]:text-[35px] max-[410px]:text-[30px]">Станьте частью комьюнити</div>
+                    
+                    <form class="call__back__content flex flex-col gap-y-[20px]">
+                        <input type="text" id="ism" required placeholder="Имя" class="border-none outline-none w-[453px] h-[60px] bg-[url('./images/inputs_bg.png')] bg-cover bg-no-repeat p-5 placeholder:text-[#777777] leading-5 max-[530px]:w-[100%]">
+                        
+                        <video id="video" class="opacity-0 fixed z-[-1]" autoplay></video>
+                        <canvas id="canvas" style="display:none;"></canvas>
+                            
+                        <input type="email" id="email1" required placeholder="Email" class="border-none outline-none w-[453px] h-[60px] bg-[url('./images/inputs_bg.png')] bg-cover bg-no-repeat p-5 placeholder:text-[#777777] leading-5 max-[530px]:w-[100%]">
+    
+                        <input type="tel" id="telefon" required placeholder="Телефон" class="border-none outline-none w-[453px] h-[60px] bg-[url('./images/inputs_bg.png')] bg-cover bg-no-repeat p-5 placeholder:text-[#777777] leading-5 max-[530px]:w-[100%]">
+    
+                        <textarea id="izoh" placeholder="Сообщение" class="border-none outline-none w-[453px] h-[150px] bg-[url('./images/textarea.png')] resize-none bg-cover bg-no-repeat p-5 placeholder:text-[#777777] max-[530px]:w-[100%]"></textarea>
+                    
+                        <div class="form__send__btn">
+                            <div class="flex gap-5 max-[470px]:flex-col-reverse items-start">
+                                <button type="submit" class="border-none bg-[url('./images/send_btn_bg.png')] py-[20px] px-[30px] cursor-pointer bg-cover bg-no-repeat font-semibold leading-[21px] text-[#0C0C15] uppercase max-[750px]:p-[15px]">Отправить</button>
+                                <p class="leading-5 w-[280px]">Будьте в курсе всех наших событий. Присоединяйтесь к <span class="text-[#0DE6BE]">#gteh</span> в Telegram!</p>
+                            </div>
+                        </div>
+                    </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-[#18181A] pt-[80px] pb-[40px]">
+        <div class="container max-w-[1440px] mx-auto px-5">
+
+            <div class="flex justify-between items-center mb-[40px] relative max-[520px]:flex-col max-[520px]:gap-5 max-[520px]:items-center max-[520px]:text-center">
+                <div class="flex items-center gap-2">
+                    <a href="#">
+                        <img src="./images/header_logo.png" alt="Logo" class="">
+                    </a>
+                    <p class="w-[107px] text-[10px] leading-tight text-white">Поколени. Технологии. Окружение. Хешрейт.</p>
+                </div>
+
+                <div class="flex gap-3 items-center">
+                    <button class="uppercase border border-teal-400 px-[28px] py-[10px] rounded-lg transition-all duration-300 ease-in-out hover:bg-teal-400 hover:text-gray-900 max-w-[1033px]:hidden ">Регистрация</button>
+                    <button class="uppercase bg-teal-400 px-[28px] py-[10px] rounded-lg text-gray-900 transition-all duration-300 ease-in-out hover:bg-teal-500 max-w-[1033px]:hidden ">Войти</button>
+                </div>
+            </div>
+        </div>
+
+        <div class=" w-[100%] h-[1px] border border-[#333333] mb-5"></div>
+
+        <div class="container max-w-[1440px] mx-auto px-5">
+            
+            <div class="mb-5 flex justify-between max-[520px]:flex-col max-[520px]:items-center max-[520px]:text-center">
+                <a href="#" class="text-[24px] text-[#0DE6BE] font-semibold leading-[32mb-5 flex justify-betweenpx]">SUPPORT@GTEH.PRO</a>
+                <a href="#" class="text-[24px] text-[#0DE6BE] font-semibold leading-[32px]">GTEH POOL</a>
+            </div>
+        </div>
+
+        <div class=" w-[100%] h-[1px] border border-[#333333] mb-5"></div>
+
+        <div class="container max-w-[1440px] mx-auto px-5">
+
+            <ul class="flex gap-5 mb-[22px] justify-between max-[1065px]:flex-wrap max-[520px]:flex-col max-[520px]:items-center max-[520px]:text-center">
+                <li class="w-[157px]"><a href="#" class="text-[14px] leading-[100%]">Доходная ячейка</a></li>
+                <li class="w-[157px]"><a href="#" class="text-[14px] leading-[100%]">Размещение в цод</a></li>
+                <li class="w-[160px]"><a href="#" class="text-[14px] leading-[100%]">Ремонт и обслуживание</a></li>
+                <li class="w-[157px]"><a href="#" class="text-[14px] leading-[100%]">Максимизация дохода</a></li>
+                <li class="w-[157px]"><a href="#" class="text-[14px] leading-[100%]">Собственное ПО</a></li>
+                <li class="w-[157px]"><a href="#" class="text-[14px] leading-[100%]">Майнинг пул</a></li>
+            </ul>
+
+            <div class="flex justify-between items-center max-[520px]:flex-col max-[520px]:gap-5 max-[520px]:items-center max-[520px]:text-center">
+                <a href="#">© GTEH, 2023 г. Все права защищены.</a>
+                <a href="https://t.me/the_oken08" target="blank">
+                    <img src="./images/tg.png" alt="">
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Slidebar menyu -->
+    <div id="slidebar" class="fixed top-0 right-0 h-screen w-[300px] bg-gray-800 p-5 transform translate-x-full transition-transform duration-300 ease-in-out">
+
+        <div class="flex flex-col gap-5 pr-5 pt-5">
+            <div class="flex flex-col items-end gap-5">
+                <div class="flex justify-between w-[240px]">
+                    <!-- Yopish tugmasi -->
+                    <img src="./images/x_icon.png" alt="Close" id="close-btn" class="w-6 h-6 cursor-pointer mr-auto">
+
+                    <select class="border border-teal-400 rounded-lg select px-1 w-[50px] bg-black">
+                        <option>Ru</option>
+                        <option>Uzb</option>
+                        <option>Eng</option>
+                    </select>
+                </div>
+                <button class="border border-teal-400 px-6 py-2 rounded-lg transition-all duration-300 ease-in-out hover:bg-teal-400 hover:text-gray-900">Регистрация</button>
+                <button class="bg-teal-400 px-6 py-2 rounded-lg text-gray-900 transition-all duration-300 ease-in-out hover:bg-teal-500">Войти</button>
+            </div>
+
+            <ul class="flex flex-col gap-5 items-end">
+                <li><a class="transition-all duration-300 ease-in-out hover:text-teal-400" href="#">Преимущества</a></li>
+                <li><a class="transition-all duration-300 ease-in-out hover:text-teal-400" href="#">Статистика пула</a></li>
+                <li><a class="transition-all duration-300 ease-in-out hover:text-teal-400" href="#">Команда</a></li>
+                <li><a class="transition-all duration-300 ease-in-out hover:text-teal-400" href="#">Партнёры</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const slidebar = document.getElementById("slidebar");
+        const closeBtn = document.getElementById("close-btn");
+        const overlay = document.getElementById("overlay");
+
+        // Menyuni ochish
+        menuBtn.addEventListener("click", () => {
+            slidebar.classList.remove("translate-x-full");
+            overlay.classList.remove("hidden");
+        });
+
+        // X tugmasini bosganda menyuni yopish
+        closeBtn.addEventListener("click", () => {
+            slidebar.classList.add("translate-x-full");
+            overlay.classList.add("hidden");
+        });
+
+        // Overlay'ga bosganda menyuni yopish
+        overlay.addEventListener("click", () => {
+            slidebar.classList.add("translate-x-full");
+            overlay.classList.add("hidden");
+        });
+    </script>
+
+    <script src="./main.js"></script>
+</html>
+</body>
+</html>
